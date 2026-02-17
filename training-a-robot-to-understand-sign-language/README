@@ -1,0 +1,29 @@
+This dataset is a repositpry of sign language images taken by the Anki Vector
+robot. To understand the American sign language for the ENglish alphabet,
+please take a look at the following video:
+https://www.youtube.com/watch?v=a5BD8SjhPSg
+
+Extract:
+To extract please follow the followong steps
+gzip -d signlanguage.tar.gz
+tar -xvf signlanguage.tar
+
+Organizations:
+The dataet contains roughly 8500 images. Images are labelled according to the
+sign language, for e.g. all images with a_*.png are labels for pictures with
+sign for the alphabet 'a' taken by vector. All images for the background (with
+no sign) are labelled as background_a.
+
+Details:
+The images are captured using the following program:
+https://github.com/anki/vector-python-sdk/blob/master/examples/experimental/sign_language_recognition_system/data_gen.py
+
+This program captures a 200x200 Black and white image of a hand sign centered
+on Vector's camera feed. The images were captured at different times of the
+day and for different lighting conditions.
+
+Challenge:
+Use these images to build a model which can predict a hand sign using the
+forllowing program provided with teh Vector SDk:
+https://github.com/anki/vector-python-sdk/blob/master/examples/experimental/sign_language_recognition_system/recognizer.py
+
